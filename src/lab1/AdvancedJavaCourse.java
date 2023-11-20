@@ -8,11 +8,9 @@ import javax.swing.*;
  * @author your name goes here
  * @version 1.00
  */
-public class AdvancedJavaCourse {
+public class AdvancedJavaCourse extends Course {
 
-    String courseName;
-    private String courseNumber;
-    private double credits;
+
     private String prerequisites;
 
     public AdvancedJavaCourse(String courseName, String courseNumber) {
@@ -58,4 +56,13 @@ public class AdvancedJavaCourse {
         this.setCredits(credits);
     }
 
+    @Override
+    public String toString() {
+        return "AdvancedJavaCourse{" +
+                "prerequisites='" + prerequisites + '\'' +
+                ", courseName='" + courseName + '\'' +
+                ", courseNumber='" + courseNumber + '\'' +
+                ", credits=" + credits +
+                '}';
+    }
 }

@@ -8,7 +8,7 @@ import javax.swing.*;
  * @author your name goes here
  * @version 1.00
  */
-public class IntroToProgrammingCourse {
+public class IntroToProgrammingCourse extends SoftwareCourse{
 
     private String courseName;
     private String courseNumber;
@@ -31,6 +31,7 @@ public class IntroToProgrammingCourse {
         }
         this.courseName = courseName;
     }
+
 
     public String getCourseNumber() {
         return courseNumber;

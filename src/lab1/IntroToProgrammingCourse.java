@@ -9,11 +9,9 @@ import javax.swing.*;
  * @author your name goes here
  * @version 1.00
  */
-public class IntroToProgrammingCourse {
+public class IntroToProgrammingCourse extends Course {
 
-    String courseNumber;
-    private String courseName;
-    private double credits;
+
 
     public IntroToProgrammingCourse(String courseName, String courseNumber) {
         this.setCourseName(courseName);
@@ -59,4 +57,12 @@ public class IntroToProgrammingCourse {
         this.credits = credits;
     }
 
+    @Override
+    public String toString() {
+        return "IntroToProgrammingCourse{" +
+                "courseName='" + courseName + '\'' +
+                ", courseNumber='" + courseNumber + '\'' +
+                ", credits=" + credits +
+                '}';
+    }
 }

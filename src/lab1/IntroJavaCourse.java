@@ -6,12 +6,11 @@ package lab1;
  * @author your name goes here
  * @version 1.00
  */
-public class IntroJavaCourse {
+public class IntroJavaCourse extends Course{
 
-    String courseName;
-    double credits;
+
     String prerequisites;
-    private String courseNumber;
+
 
     public IntroJavaCourse(String courseName, String courseNumber) {
         this.courseName = courseName;
@@ -47,4 +46,17 @@ public class IntroJavaCourse {
         this.prerequisites = prerequisites;
     }
 
+    public IntroJavaCourse() {
+        super();
+    }
+
+    @Override
+    public String toString() {
+        return "IntroJavaCourse{" +
+                "prerequisites='" + prerequisites + '\'' +
+                ", courseName='" + courseName + '\'' +
+                ", courseNumber='" + courseNumber + '\'' +
+                ", credits=" + credits +
+                '}';
+    }
 }
